@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showingCamera = false
+    @State var image = UIImage()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack{
+            Image(uiImage: self.image)
+                .resizable()
+                .frame(width: 300,height: 200)
+            Button(action:{
+                showingCamera.toggle()
+            }){
+                Text("カメラで撮影する")
+            }
+            
+            .sheet(isPresented:  $showingCamera, content: {
+                CameraController(image: $image,showingCamera: $showingCamera)
+            })
         }
-        .padding()
     }
 }
 

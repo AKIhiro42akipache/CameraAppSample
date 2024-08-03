@@ -11,6 +11,7 @@
 		31E466932C5DE7E50043DDCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E466922C5DE7E50043DDCB /* ContentView.swift */; };
 		31E466952C5DE7E60043DDCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31E466942C5DE7E60043DDCB /* Assets.xcassets */; };
 		31E466982C5DE7E60043DDCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31E466972C5DE7E60043DDCB /* Preview Assets.xcassets */; };
+		31E4669F2C5DE90C0043DDCB /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E4669E2C5DE90C0043DDCB /* CameraController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		31E466922C5DE7E50043DDCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		31E466942C5DE7E60043DDCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31E466972C5DE7E60043DDCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		31E4669E2C5DE90C0043DDCB /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 		31E466842C5DE7E50043DDCB = {
 			isa = PBXGroup;
 			children = (
+				31E4669E2C5DE90C0043DDCB /* CameraController.swift */,
 				31E4668F2C5DE7E50043DDCB /* CameraApp */,
 				31E4668E2C5DE7E50043DDCB /* Products */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31E4669F2C5DE90C0043DDCB /* CameraController.swift in Sources */,
 				31E466932C5DE7E50043DDCB /* ContentView.swift in Sources */,
 				31E466912C5DE7E50043DDCB /* CameraAppApp.swift in Sources */,
 			);
@@ -275,6 +279,7 @@
 				DEVELOPMENT_TEAM = 7WP8K9W8JQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "判定用の写真を撮るために許可が必要です";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +309,7 @@
 				DEVELOPMENT_TEAM = 7WP8K9W8JQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "判定用の写真を撮るために許可が必要です";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
